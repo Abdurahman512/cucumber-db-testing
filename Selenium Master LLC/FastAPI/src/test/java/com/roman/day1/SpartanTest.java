@@ -1,10 +1,13 @@
-package com.cydeo.day1;
+package com.roman.day1;
 
 import com.utilities.SpartanTEstBase;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -44,7 +47,10 @@ public class SpartanTest extends SpartanTEstBase {
         System.out.println("response.path(\"[0].gender\") = " + response.path("[0].gender"));
 
         // Get me first spartan name
-        System.out.println("response.path(\"[0].name\") = " + response.path("[0].name"));
+        List<String> allName = response.path("name");
+        System.out.println("allName = " + allName);
+
+        //System.out.println("response.path(\"[0].name\") = " + response.path("[0].name"));
         //System.out.println("response.path(\"name[0]\") = " + response.path("name[0]"));
 
         // Get me first all spartan name
