@@ -1,6 +1,6 @@
 package com.roman.day1;
 
-import com.utilities.SpartanTEstBase;
+import com.utilities.SpartanTestBase;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class SpartanTest extends SpartanTEstBase {
+public class SpartanTest extends SpartanTestBase {
     /*
    1. Send request to Spartan url and save the response
    2. Accept application/json
