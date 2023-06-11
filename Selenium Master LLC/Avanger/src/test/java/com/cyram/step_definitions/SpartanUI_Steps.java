@@ -1,4 +1,4 @@
-package com.cyram.UIBootcamp.step_definitions;
+package com.cyram.step_definitions;
 
 import com.cyram.pages.SpartanMainPage;
 import com.cyram.pages.SpartanViewPage;

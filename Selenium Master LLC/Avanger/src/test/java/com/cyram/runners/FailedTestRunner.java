@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        glue = "com/cyram/UIBootcamp/step_definitions",
+        glue = "com/cyram/step_definitions",
         features = "@target/rerun.txt"
 )
 public class FailedTestRunner {

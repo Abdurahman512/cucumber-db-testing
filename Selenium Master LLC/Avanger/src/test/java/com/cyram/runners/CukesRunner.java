@@ -11,9 +11,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt",
         },
         features = "src/test/resources/features",
-        glue = "com/cyram/UIBootcamp/step_definitions",
+        glue = "com/cyram/step_definitions",
         dryRun = false,
-        tags = "@2p"
+        tags = "@wip"
 )
 public class CukesRunner {
 

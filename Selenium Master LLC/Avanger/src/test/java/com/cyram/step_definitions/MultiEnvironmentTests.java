@@ -1,6 +1,7 @@
-package com.cyram.UIBootcamp.step_definitions;
+package com.cyram.step_definitions;
 
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 public class MultiEnvironmentTests {
@@ -15,4 +16,6 @@ public class MultiEnvironmentTests {
 
 
     }
+
+
 }
