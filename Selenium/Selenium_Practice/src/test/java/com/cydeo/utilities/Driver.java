@@ -46,7 +46,7 @@ public class Driver {
                 Depending on the browserType that will be return from configuration.properties file
                 switch statement will determine the case, and open the matching browser
             */
-            switch (browserType){
+            switch (browserType) {
                 case "chrome":
 
                     WebDriverManager.chromedriver().setup();
@@ -60,6 +60,14 @@ public class Driver {
                     driverPool.get().manage().window().maximize();
                     driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     break;
+                case "headless-chrome":
+                    WebDriverManager.firefoxdriver().setup();
+                    ChromeOptions option = new ChromeOptions();
+                    option.setHeadless(true);
+                    driverPool.set(new ChromeDriver(option));
+                    driverPool.get().manage().window().maximize();
+                    driverPool.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
                 case "remote-chrome":
                     // assign your grid server address
                     String gridAdress = "54.89.242.106"; // put your own Linux grid IP here

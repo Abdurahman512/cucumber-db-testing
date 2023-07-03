@@ -5,7 +5,7 @@ Feature: Webtable app login
   Background:
     Given user is on the login page of webtable app
 
-
+@smoke
   Scenario: login scenario
     When  user enters username Test
     And   user enters password Tester
